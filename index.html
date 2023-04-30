@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>JemBox</title>
+</head>
+
+<body>
+
+    <div class="video-wrapper">
+        <video autoplay muted loop id="landing-video">
+            <source src="img/jembox-landing.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="#"><img src="img/JemBox-white-blk.png" alt="logo"></a>
+            </div>
+            <div class="navbar-nav">
+                <a href="#about">about</a>
+                <a href="/JemBox/pages/videos.html">videos</a>
+                <a href="#contact">contact</a>
+            </div>
+
+        </nav>
+        <div class="banner">
+            <div class="container">
+                <h1 class="banner-title">JemBox</h1>
+                <p>Helping your kids learn new skills</p>
+                <a href="#" class="btn contact-btn">Order Your Box</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="title">
+                <h2>About</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-video">
+                    <video controls>
+                        <source src="img/about-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="about-info">
+                    <h3>What is Jembox?</h3>
+                    <p>
+                        Hello I'm Jem and this is JemBox. Delectus accusamus laborum illo rerum
+                        error aspernatur hic aliquid fugit debitis neque nostrum nesciunt cum, mollitia facere unde
+                        libero officiis laboriosam enim distinctio molestias accusantium, quidem a corporis. Sed omnis
+                        magni quas quis fugiat sequi sint! Aliquid inventore perspiciatis quis. Maxime, esse?
+
+                        Watch the video and find out more!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="videos">
+        <div class="container">
+            <div class="title">
+                <h2>Videos</h2>
+                <p>These are the videos assigned to each box. Click on one of the boxes to find out more...</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Box 1</h3>
+                    <div class="card-thumb">
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/5953555/pexels-photo-5953555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, culpa.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Box 2</h3>
+                    <div class="card-thumb">
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/5953555/pexels-photo-5953555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, culpa.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Box 3</h3>
+                    <div class="card-thumb">
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/5953555/pexels-photo-5953555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, culpa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="title">
+                <h2>Contact</h2>
+                <p>Get in touch if you are interested in trying out a box. Or if you have any questions, please fill
+                    out
+                    the
+                    form.</p>
+            </div>
+
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>331 Bethnal Green Road,<br>London,<br>E2 6LJ</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+44 7539 165291</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>jembox@email.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-content">
+                    <form action="https://formsubmit.com/samkantor@hotmail.com" method="post">
+                        <h3>Send Message</h3>
+                        <div class="inputBox">
+                            <input type="text" name="name" required>
+                            <span>Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" id="email" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required></textarea>
+                            <span>Type your message</span>
+                        </div>
+                        <input type="hidden" name="_subject" value="New email YAY!">
+                        <input type="hidden" name="_next" value="/thanks">
+                        <a href="#contact" class="btn contact-btn form-btn">Send</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
