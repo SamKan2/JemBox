@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="video-wrapper">
+    <div class="video-wrapper background">
         <video autoplay muted loop id="landing-video">
             <source src="img/jembox-landing.mp4" type="video/mp4">
         </video>
@@ -23,7 +23,7 @@
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
-                <a href="#"><img src="img/JemBox-white-blk.png" alt="logo"></a>
+                <a href="/JemBox/index.html"><img src="img/JemBox-white-blk.png" alt="logo"></a>
             </div>
             <div class="navbar-nav">
                 <a href="#about">about</a>
@@ -32,32 +32,33 @@
             </div>
 
         </nav>
-        <div class="banner">
+        <div class="banner foreground">
             <div class="container">
-                <h1 class="banner-title">JemBox</h1>
-                <p>Helping your kids learn new skills</p>
-                <a href="#" class="btn contact-btn">Order Your Box</a>
+                <h1 class="banner-title fade-in">JemBox</h1>
+                <p class="slide from-bottom">Helping your kids learn new skills</p>
+                <a href="#" class="btn contact-btn fade-in">Order Your Box</a>
             </div>
         </div>
     </header>
 
     <section class="about" id="about">
         <div class="container">
-            <div class="title">
+            <div class="title fade-in">
                 <h2>About</h2>
             </div>
             <div class="about-content">
-                <div class="about-video">
+                <div class="about-video slide from-left">
                     <video controls>
                         <source src="img/about-video.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="about-info">
+                <div class="about-info slide from-right">
                     <h3>What is Jembox?</h3>
                     <p>
                         Hello I'm Jem and this is JemBox. Delectus accusamus laborum illo rerum
                         error aspernatur hic aliquid fugit debitis neque nostrum nesciunt cum, mollitia facere unde
-                        libero officiis laboriosam enim distinctio molestias accusantium, quidem a corporis. Sed omnis
+                        libero officiis laboriosam enim distinctio molestias accusantium, quidem a corporis. Sed
+                        omnis
                         magni quas quis fugiat sequi sint! Aliquid inventore perspiciatis quis. Maxime, esse?
 
                         Watch the video and find out more!
@@ -70,11 +71,11 @@
 
     <section class="videos">
         <div class="container">
-            <div class="title">
+            <div class="title fade-in">
                 <h2>Videos</h2>
                 <p>These are the videos assigned to each box. Click on one of the boxes to find out more...</p>
             </div>
-            <div class="cards">
+            <div class="cards fade-in">
                 <div class="card">
                     <h3>Box 1</h3>
                     <div class="card-thumb">
@@ -116,7 +117,7 @@
 
     <section class="contact" id="contact">
         <div class="container">
-            <div class="title">
+            <div class="title fade-in">
                 <h2>Contact</h2>
                 <p>Get in touch if you are interested in trying out a box. Or if you have any questions, please fill
                     out
@@ -127,7 +128,7 @@
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="box">
+                    <div class="box slide from-bottom">
                         <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                         <div class="text">
                             <h3>Address</h3>
@@ -135,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div class="box slide from-bottom">
                         <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                         <div class="text">
                             <h3>Phone</h3>
@@ -143,11 +144,12 @@
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div class="box slide from-bottom">
                         <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                         <div class="text">
                             <h3>Email</h3>
-                            <p>jembox@email.com</p>
+                            <a href="mailto:jembox@email.com">jembox@email.com</a>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -174,6 +176,25 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+
+        <ul class="social-icon">
+            <li class="item"><a class="link" href="#">
+                    <i class="fa-brands fa-square-facebook"></i> </a></li>
+            <li class="item"><a class="link" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+            <li class="item"><a class="link" href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a></li>
+        </ul>
+        <div class="navbar-nav">
+            <a href="#about">about</a>
+            <a href="/JemBox/pages/videos.html">videos</a>
+            <a href="#contact">contact</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
