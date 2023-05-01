@@ -31,6 +31,10 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     line-height: 1.4;
     background: linear-gradient(90deg, var(--landing-blue) 0%, var(--purple) 100%);}
@@ -51,12 +55,10 @@ h2 {
     font-size: 6vw;
     font-weight: 400;
     text-align: center;
-    padding: 1vw;
     text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
     display: inline;
     border-bottom: 2px solid var(--pink);
     margin-bottom: 2rem;
-    
 }
 
 h3 {
@@ -78,9 +80,9 @@ p {
     color: #533a7b;
     text-shadow: 1px 1px 0 #fff;
     font-family: var(--quicksand);
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.5vw;
-    
+    line-height: 1.5;
 }
 
 .banner .container {
@@ -130,7 +132,7 @@ header {
 }
 
 .navbar-logo img{
-    max-width: 9vw;
+    max-width: 7vw;
     order: 1;
 }
 
@@ -142,7 +144,7 @@ header {
 }
 
 .navbar-nav a {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     position: relative;
     text-transform: uppercase;
     font-family: var(--syne);
@@ -229,15 +231,15 @@ header {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 5vh;
 }
 
 .about-video video {
-    max-width: 100%;
+    margin-top: 5vh;
+    max-width: 50%;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
@@ -254,14 +256,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {
     background: var(--yellow);
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    flex-basis: calc(30% - 10px);
-    height: 0;
-    padding-bottom: calc(30% - 10px);
+    max-width: 50%;
     margin-bottom: 30px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -346,6 +348,16 @@ header {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
 }
 
+.contact .container .contact-info .box .text a {
+    text-decoration: none;
+    color: #533a7b;
+    text-shadow: 1px 1px 0 #fff;
+    font-family: var(--quicksand);
+    font-weight: 600;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
 .form-content {
     width: 40%;
     padding: 40px;
@@ -413,7 +425,7 @@ header {
     padding-bottom: 0;
 }
 .videoPage video {
-    width: 50%;
+    height: 60vh;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     margin: 4vw;
 }
@@ -489,6 +501,7 @@ header {
 
 @media screen and (max-width: 900px) {
 
+    
     p {
         font-size: 16px;
     }
@@ -535,15 +548,23 @@ header {
         font-size: 5vw;
     }
     .banner p {
-        font-size: 8vw;
+        font-size: 16px;
+    }
+    
+    header {
+        max-height: 100vh;
+    }
+    .about-video video {
+        width: 50%;
+
     }
     .card {
-        flex-basis: 100%;
+        width: 80%;
         padding: 0;
         margin-bottom: 10px;
     }
     .banner .container {
-        min-height: auto;
+        height: 100%;
     }
     .contact .container .contact-info {
         order: 2;
