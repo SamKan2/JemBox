@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Vina+Sans&display=swap');
 @font-face {
     font-family: 'introrustg-base2line';
     src: url('/JemBox/fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff2') format('woff2'),
@@ -9,7 +9,7 @@
 }
 
 :root {
-    --alumni: 'Alumni Sans Inline One', cursive;
+    --vina: 'Vina Sans', cursive;
     --Roboto: 'Roboto', sans-serif;
     --syne: 'Syne', sans-serif;
     --playfair: 'Playfair Display', serif;
@@ -50,7 +50,7 @@ h1 {
 }
 
 h2 {
-    font-family: var(--rust);
+    font-family: 'Cinzel';
     color: var(--pink);
     font-size: 6vw;
     font-weight: 400;
@@ -124,7 +124,7 @@ header {
   }
 
 .navbar {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.7);
     padding: 0 1.2rem;
     display: flex;
     justify-content: space-between;
@@ -537,6 +537,47 @@ header {
     }
 }
 
+.nav-toggler {
+    border: 3px solid #fff;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+}
+
+.nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+    background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+}
+
 @media screen and (max-width: 500px) {
     h1 {
         font-size: 20vw;
@@ -547,6 +588,44 @@ header {
     h3 {
         font-size: 5vw;
     }
+    .navbar-nav a {
+        font-size: 16px;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    .nav-toggler {
+        display: block;
+        
+    }
+    .navbar-nav {
+        position: absolute;
+        justify-content: space-evenly;
+        font-size: 16px;
+        width: 100%;
+        height: calc(100vh - 85.6px);
+        left: 0;
+        top: 85.6px;
+        flex-direction: column;
+        background: rgba(0,0,0,0.7);
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        
+    }
+    .navbar-nav.open {
+        max-height: 50vh;
+        overflow: visable;
+    }
+    
+    .navbar-logo img {
+        max-width: 80px;
+        
+    }
+    
     .banner p {
         font-size: 16px;
     }
