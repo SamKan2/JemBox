@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato&family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
 @font-face {
     font-family: 'introrustg-base2line';
     src: url('/JemBox/fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff2') format('woff2'),
@@ -9,7 +9,7 @@
 }
 
 :root {
-    --vina: 'Vina Sans', cursive;
+    
     --Lato: 'Lato', sans serif;
     --syne: 'Syne', sans-serif;
     --playfair: 'Playfair Display', serif;
