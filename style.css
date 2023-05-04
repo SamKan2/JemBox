@@ -231,6 +231,10 @@ header {
     text-align: left;
 }
 
+.about-content .about-info span {
+    font-weight: 600;
+}
+
 .about-video {
     display: flex;
     justify-content: center;
@@ -239,7 +243,7 @@ header {
 .about-video video {
     margin-top: 5vh;
     max-width: 50%;
-    box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
+    
 }
 
 .about-video video:hover {
