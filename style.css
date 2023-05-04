@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
 @font-face {
     font-family: 'introrustg-base2line';
     src: url('/JemBox/fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff2') format('woff2'),
@@ -9,10 +8,8 @@
 }
 
 :root {
-    
     --Lato: 'Lato', sans serif;
     --syne: 'Syne', sans-serif;
-    --playfair: 'Playfair Display', serif;
     --quicksand: 'Quicksand', sans-serif;
     --rust: 'introrustg-base2line', cursive;
     --pink: #de6966;
@@ -21,13 +18,11 @@
     --purple: #e5bcfd;
     --yellow: #fdfd96;
     --landing-blue: #8cf4fc;
-    --brown: #6a4c2f;
 }
 
 * {
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
     font-family: var(--syne);
 }
 
@@ -59,7 +54,6 @@ h2 {
     text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
     display: inline;
     border-bottom: 2px solid;
-    margin-bottom: 2rem;
 }
 
 h3 {
@@ -103,7 +97,6 @@ p {
 header {
     min-height: 100vh;
     flex-direction: column;
-    justify-content: stretch;
     position: relative;
     display: flex;
 }
@@ -142,7 +135,6 @@ header {
     position: relative;
     text-transform: uppercase;
     font-family: var(--syne);
-    letter-spacing: 1px;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
@@ -247,7 +239,6 @@ header {
 }
 
 .about-video video:hover {
-
     transform: scale(1.01);
 }
 
@@ -341,7 +332,6 @@ header {
     color: var(--pink);
     flex-direction: column;
     font-weight: 300;
-    
 }
 
 .contact .container .contact-info .box .text a {
@@ -356,7 +346,6 @@ header {
     width: 40%;
     padding: 40px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    
     padding-top: 10px;
 }
 
@@ -376,10 +365,7 @@ header {
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
-    
 }
-
-
 
 .form-content .inputBox span {
     position: absolute;
@@ -431,7 +417,7 @@ header {
 }
 .videoPage video {
     height: 60vh;
-    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0, .75);
     margin: 4vw;
     text-align: center;
 }
