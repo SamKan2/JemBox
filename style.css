@@ -27,8 +27,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: var(--quicksand);
     scroll-behavior: smooth;
+    font-family: var(--syne);
 }
 
 a {
@@ -208,7 +208,6 @@ header {
     color: #fff;
     border: #fff solid;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 30px;
