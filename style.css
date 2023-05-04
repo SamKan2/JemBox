@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato&family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
 @font-face {
     font-family: 'introrustg-base2line';
     src: url('/JemBox/fonts/introrustg_base2line_macroman/introrustg-base2line-webfont.woff2') format('woff2'),
@@ -10,7 +10,7 @@
 
 :root {
     --vina: 'Vina Sans', cursive;
-    --Roboto: 'Roboto', sans-serif;
+    --Lato: 'Lato', sans serif;
     --syne: 'Syne', sans-serif;
     --playfair: 'Playfair Display', serif;
     --quicksand: 'Quicksand', sans-serif;
@@ -43,21 +43,21 @@ h1 {
     font-size: 120px;
     /* font-family: var(--alumni); */
     font-family: 'introrustg-base2line';
-    color: var(--pink);
+    color: #fff;
     line-height: 1.2;
     font-weight: 400;
     text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
 }
 
 h2 {
-    font-family: 'Cinzel';
-    color: var(--pink);
+    font-family: var(--rust);
+    color: #fff;
     font-size: 60px;
     font-weight: 400;
     text-align: center;
     text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
     display: inline;
-    border-bottom: 2px solid var(--pink);
+    border-bottom: 2px solid;
     margin-bottom: 2rem;
 }
 
@@ -66,21 +66,14 @@ h3 {
     font-family: var(--syne);
     padding: 1rem;
     color: #fff;
-    text-shadow: 2px 2px 1px #533a7b;
     text-align: center;
     text-transform: uppercase;
-}
-
-.card h3, .form-content h3 {
-    color: #533a7b;
-    text-shadow: 2px 2px 1px #fff;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
 }
 
 p {
-    color: #533a7b;
-    text-shadow: 1px 1px 0 #fff;
-    font-family: var(--quicksand);
-    font-weight: 600;
+    color: #222;
+    font-family: var(--syne);
     font-size: 18px;
     line-height: 1.5;
 }
@@ -213,7 +206,7 @@ header {
     transform: translateX(-50%);
     text-decoration: none;
     color: #fff;
-    border: #fff solid 0.2rem;
+    border: #fff solid;
     font-size: 1rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
@@ -223,33 +216,35 @@ header {
 }
 
 .contact-btn:hover {
-    background: var(--pink);
+    background: #fff;
     letter-spacing: 0.25rem;
-    box-shadow: 0 0 35px var(--pink);
-    border-color: var(--pink);
-    color: #533a7b;
+    box-shadow: 0 0 35px #fff;
+    border-color: #fff;
+    color: #222;
+    text-shadow: none;
 }
 
 .about-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: left;
+}
+
+.about-video {
+    display: flex;
+    justify-content: center;
 }
 
 .about-video video {
     margin-top: 5vh;
     max-width: 50%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.75);
 }
 
 .about-video video:hover {
     box-shadow: 0 10px 28px 4px rgba(130,57,63,.65), 0 10px 50px 20px rgba(130,57,63,.5), 0 8px 20px -15px rgba(130,57,63,.6);
     transform: scale(1.01);
-}
-
-.about-info {
-    text-align: center;
 }
 
 .cards {
@@ -332,7 +327,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 22px;
-    color: #533a7b;
+    
 }
 
 .contact .container .contact-info .box .text {
@@ -342,16 +337,14 @@ header {
     color: var(--pink);
     flex-direction: column;
     font-weight: 300;
-    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+    
 }
 
 .contact .container .contact-info .box .text a {
     text-decoration: none;
-    color: #533a7b;
-    text-shadow: 1px 1px 0 #fff;
-    font-family: var(--quicksand);
-    font-weight: 600;
-    font-size: 1.5vw;
+    color: #222;
+    font-family: var(--syne);
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -382,10 +375,12 @@ header {
     border-radius: 5px;
 }
 
+
+
 .form-content .inputBox span {
     position: absolute;
     left: 0;
-    padding: 5px 0;
+    padding: 5px 5px;
     font-size: 16px;
     margin: 10px 0;
     pointer-events: none;
@@ -404,8 +399,16 @@ header {
 
 .form-content .btn {
     position: relative;
-    border-color: #533a7b;
-    color: #533a7b;
+    color: #222;
+    border-color: #222;
+    width: 50%;
+    text-shadow: none;
+}
+
+.form-content .btn:hover {
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
 }
 
 .videoPage h2 {
@@ -424,8 +427,9 @@ header {
 }
 .videoPage video {
     height: 60vh;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
     margin: 4vw;
+    text-align: center;
 }
 
 .videoPage video:hover {
@@ -460,6 +464,10 @@ header {
   .social-icon .item,
   .menu__item {
     list-style: none;
+  }
+
+ .fa-brands {
+    font-size: 25px;
   }
   
   .social-icon .link {
