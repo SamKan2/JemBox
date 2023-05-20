@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -195,14 +195,14 @@
             <div class="contact-content">
 
                 <div class="form-content">
-                    <form netlify method="post">
+                    <form netlify method="post" id="contact-form">
                         <h3>Send Message</h3>
                         <div class="inputBox">
-                            <input type="text" name="name" required>
+                            <input type="text" name="name" required autocomplete="name">
                             <span>Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" required autocomplete="email">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">

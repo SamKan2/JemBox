@@ -579,7 +579,7 @@ header {
 .products-preview .preview .price {
   padding: 1rem 0;
   font-size: 2.5rem;
-  color: #27ae60;
+  color: var(--pink);
 }
 
 .products-preview .preview .buttons {
@@ -748,7 +748,7 @@ header {
   }
   .navbar-nav.open {
     max-height: 50vh;
-    overflow: visable;
+    overflow: visible;
   }
 
   .navbar-logo img {
