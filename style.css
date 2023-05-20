@@ -41,8 +41,6 @@ body {
 
 h1 {
   font-size: 120px;
-  /* font-family: var(--alumni); */
-  font-family: var(--rust);
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
