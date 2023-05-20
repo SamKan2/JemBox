@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/JemBox/server/public/store.css">
+    <link rel="stylesheet" href="/JemBox/server/public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/JemBox/server/public/fonts/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>JemBox Subscribe</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="/JemBox/server/public/index.html"><img src="/JemBox/server/public/img/JemBox-white-blk.png"
+                    alt="logo"></a>
+        </div>
+        <div class="navbar-nav">
+            <a href="/JemBox/index.html#about">about</a>
+            <a href="/JemBox/pages/videos.html">videos</a>
+            <a href="/JemBox/index.html#contact">contact</a>
+        </div>
+
+    </nav>
+
+    <section>
+        <div class="products">
+            <h2 class="title">Store</h2>
+            <div class="product-container">
+                <div class="product" data-name="trial">
+                    <img src="https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <h3>Trial a box</h3>
+                    <div class="price">
+                        <p>£20</p>
+                    </div>
+                </div>
+
+
+                <div class="product" data-name="6-month">
+                    <img src="https://images.pexels.com/photos/1329293/pexels-photo-1329293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <h3>6 Month subscription</h3>
+                    <div class="price">
+                        <p>£100</p>
+                    </div>
+                </div>
+
+
+                <div class="product" data-name="one-year">
+                    <img src="https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <h3>One Year Subscription</h3>
+                    <div class="price">
+                        <p>£200</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="products-preview">
+        <div class="preview" data-target="trial">
+            <i class="fas fa-times"></i>
+            <img src="https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+            <h3>Trial a box</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            <div class="price">£20</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+
+            </div>
+        </div>
+
+        <div class="preview" data-target="six-month">
+            <i class="fas fa-times"></i>
+            <img src="https://images.pexels.com/photos/1329293/pexels-photo-1329293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+            <h3>Six Months</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            <div class="price">£100</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+
+            </div>
+        </div>
+
+        <div class="preview" data-target="one-year">
+            <i class="fas fa-times"></i>
+            <img src="https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="">
+            <h3>One Year</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            <div class="price">£200</div>
+            <div class="buttons">
+                <a href="#" class="buy">buy now</a>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <ul class="social-icon">
+            <li class="item"><a class="link" href="#">
+                    <i class="fa-brands fa-square-facebook"></i> </a></li>
+            <li class="item"><a class="link" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a></li>
+            <li class="item"><a class="link" href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a></li>
+        </ul>
+        <div class="navbar-nav">
+            <a href="#about">about</a>
+            <a href="/JemBox/pages/videos.html">videos</a>
+            <a href="#contact">contact</a>
+        </div>
+    </footer>
+    <script src="/JemBox/server/public/store.js"></script>
+</body>
+
+</html>

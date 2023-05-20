@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="/JemBox/fonts/favicon/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -32,7 +31,7 @@
             </div>
             <div class="navbar-nav">
                 <a href="#about">about</a>
-                <a href="/JemBox/pages/videos.html">videos</a>
+                <a href="#order">order</a>
                 <a href="#contact">contact</a>
             </div>
             <button class="nav-toggler">
@@ -53,11 +52,10 @@
     <section class="about" id="about">
         <div class="container">
             <div class="title fade-in">
-                <h2>About</h2>
+                <h2>What is jembox?</h2>
             </div>
             <div class="about-content">
                 <div class="about-info slide from-bottom">
-                    <h3>What is Jembox?</h3>
                     <p>
                         <span>Welcome to Jemboxkids, the ultimate destination for fun and educational activities that
                             kids
@@ -70,13 +68,13 @@
                         tailored to meet the unique needs and interests of each child.<br>
                         With a Jemboxkids subscription, you can rest assured that your child will have access to
                         high-quality, engaging, and age-appropriate content that is aligned with national educational
-                        standards.<br>
-                        With over 15 years experience in the eduaction sector we have carefully crafted each activity
+                        standards.
+                        <!-- With over 15 years experience in the eduaction sector we have carefully crafted each activity
                         and project to promote learning and skill-building in a fun and engaging way. We believe that
                         learning should be a journey of discovery, and we strive to ignite the spark of curiosity and
                         imagination in every child.
                         At Jemboxkids, we are passionate about making learning fun and accessible to all children, and
-                        we invite you to join us on this exciting adventure!
+                        we invite you to join us on this exciting adventure! -->
                     </p>
                 </div>
 
@@ -90,44 +88,94 @@
         </div>
     </section>
 
-    <section class="videos">
-        <div class="container">
+    <section class="products" id="order">
+        <div class="container product-container">
             <div class="title fade-in">
-                <h2>Videos</h2>
+                <h2>Order Now</h2>
                 <p>These are the videos assigned to each box. Click on one of the boxes to find out more...</p>
             </div>
             <div class="cards fade-in">
-                <div class="card"><a href="/JemBox/pages/videos.html#box-1">
-                        <h3>Box 1</h3>
-                        <div class="card-thumb">
-                            <img src="/JemBox/img/box-img.png" alt="">
+                <div class="product" data-name="trial">
+                    <div class="product-content">
+                        <img src="https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <h3>Trial a box</h3>
+                        <p>Trial a box</p>
+                        <div class="price">
+                            <p>£20</p>
                         </div>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
 
-                <div class="card"><a href="/JemBox/pages/videos.html#box-2">
-                        <h3>Box 2</h3>
-                        <div class="card-thumb">
-                            <img src="/JemBox/img/box-img.png" alt="">
+                <div class="product" data-name="six-month">
+                    <div class="product-content">
+                        <img src="https://images.pexels.com/photos/1329293/pexels-photo-1329293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <h3>Three Boxes</h3>
+                        <p>Buy 3 boxes and get £10 off!</p>
+                        <div class="price">
+                            <p>£50</p>
                         </div>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <h3>Box 3</h3><a href="/JemBox/pages/videos.html#box-3">
-                        <div class="card-thumb">
-                            <img src="/JemBox/img/box-img.png" alt="">
+
+                <div class="product" data-name="one-year">
+                    <div class="product-content">
+                        <img src="https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <h3>five Boxes</h3>
+                        <p>Buy 5 and get £20 off!!</p>
+                        <div class="price">
+                            <p>£80</p>
                         </div>
-                        <div class="card-content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="products-preview">
+                <div class="preview" data-target="trial">
+                    <i class="fas fa-times"></i>
+                    <img src="https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <h3>Trial a box</h3>
+
+                    <p>Clicking Buy will you take you to a checkout page for payment and entering your address</p>
+                    <div class="price">£20</div>
+                    <stripe-buy-button class="button" buy-button-id="buy_btn_1N9rmWETC9SalK64O0NovujN"
+                        publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
+                    </stripe-buy-button>
+                </div>
+
+                <div class="preview" data-target="six-month">
+                    <i class="fas fa-times"></i>
+                    <img src="https://images.pexels.com/photos/1329293/pexels-photo-1329293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <h3>3 Boxes</h3>
+
+                    <p>Clicking Buy will you take you to a checkout page for payment and
+                        entering your address</p>
+                    <div class="price">£50</div>
+                    <stripe-buy-button buy-button-id="buy_btn_1N9r5gETC9SalK64l9BLuzFC"
+                        publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
+                    </stripe-buy-button>
+                </div>
+
+                <div class="preview" data-target="one-year">
+                    <i class="fas fa-times"></i>
+                    <img src="https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="">
+                    <h3>5 boxes</h3>
+
+                    <p>Clicking Buy will you take you to a checkout page for payment and entering
+                        your address</p>
+                    <div class="price">£80</div>
+
+                    <stripe-buy-button buy-button-id="buy_btn_1N9sHlETC9SalK64ZSciO5mP"
+                        publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
+                    </stripe-buy-button>
                 </div>
             </div>
         </div>
@@ -145,34 +193,9 @@
 
 
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="box slide from-bottom">
-                        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>331 Bethnal Green Road,<br>London,<br>E2 6LJ</p>
-                        </div>
-                    </div>
 
-                    <div class="box slide from-bottom">
-                        <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>+44 7539 165291</p>
-                        </div>
-                    </div>
-
-                    <div class="box slide from-bottom">
-                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                        <div class="text">
-                            <h3>Email</h3>
-                            <a href="mailto:jembox@email.com">info@jemboxkids.com</a>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
                 <div class="form-content">
-                    <form action="https://formsubmit.com/samkantor@hotmail.com" method="post">
+                    <form netlify method="post">
                         <h3>Send Message</h3>
                         <div class="inputBox">
                             <input type="text" name="name" required>
@@ -188,7 +211,7 @@
                         </div>
                         <input type="hidden" name="_subject" value="New email YAY!">
                         <input type="hidden" name="_next" value="/thanks">
-                        <a href="#contact" class="btn contact-btn form-btn">Send</a>
+                        <button type="submit" class="btn contact-btn form-btn">Send</button>
                     </form>
                 </div>
             </div>
@@ -204,17 +227,24 @@
                     <i class="fa-brands fa-instagram"></i>
                 </a></li>
             <li class="item"><a class="link" href="#">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa fa-envelope"></i>
                 </a></li>
         </ul>
-        <div class="navbar-nav">
+        <div class="footer-nav">
             <a href="#about">about</a>
             <a href="/JemBox/pages/videos.html">videos</a>
             <a href="#contact">contact</a>
         </div>
+        <div class="footer-nav">
+            <a href="mailto:jembox@email.com">info@jemboxkids.com</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js">
+    </script>
+
+
 </body>
 
 </html>
