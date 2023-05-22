@@ -255,7 +255,6 @@ header {
   max-width: 50%;
   margin-bottom: 30px;
   box-sizing: border-box;
-  margin: 10px;
 }
 
 .product h3 {
@@ -547,27 +546,14 @@ header {
   font-size: 30px;
 }
 
-.products-preview .preview .fa-times:hover {
+/* .products-preview .preview .fa-times:hover {
   transform: rotate(90deg);
-}
+} */
 
 .products-preview .preview h3 {
   color: #444;
   padding: 0.5rem 0;
   font-size: 30px;
-}
-
-.products-preview .preview .stars {
-  padding: 1rem 0;
-  font-size: 20px;
-}
-
-.products-preview .preview .stars i {
-  color: #27ae60;
-}
-
-.products-preview .preview .stars span {
-  color: #999;
 }
 
 .products-preview .preview p {
