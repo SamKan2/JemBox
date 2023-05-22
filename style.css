@@ -40,33 +40,32 @@ body {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 150px;
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  font-family: var(--rust);
 }
 
 h2 {
-  font-family: var(--Lato);
-  color: #fff;
+  font-family: var(--rust);
+  color: black;
   text-transform: uppercase;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
   display: inline;
   border-bottom: 2px solid;
 }
 
 h3 {
   font-size: 25px;
-  font-family: var(--syne);
+  font-family: var(--Lato);
   padding: 1rem;
-  color: #fff;
+  color: black;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -182,7 +181,7 @@ header {
 }
 
 .banner p {
-  font-size: 25px;
+  font-size: 30px;
   text-transform: capitalize;
   font-family: var(--Lato);
   font-weight: 400;
@@ -242,28 +241,6 @@ header {
 
 .about-video video:hover {
   transform: scale(1.01);
-}
-
-.cards {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.product {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  max-width: 50%;
-  margin-bottom: 30px;
-  box-sizing: border-box;
-}
-
-.product h3 {
-  text-align: center;
-}
-
-.product-content {
-  padding: 10px;
-  text-align: center;
 }
 
 .contact {
@@ -484,10 +461,25 @@ header {
   font-weight: 300;
 }
 
+.products .product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: auto;
+  padding: 4rem;
+}
+
+.products .title {
+  padding: 0;
+}
+
+.products .product-content h3 {
+  color: #111;
+}
 .products .product-container .product {
   text-align: center;
   padding: 3rem 2rem;
-  background: transparent;
+  background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   outline: 1px solid #ccc;
   outline-offset: -10px;
@@ -500,7 +492,7 @@ header {
 }
 
 .products .product-container .product img {
-  max-height: 150px;
+  max-width: 100%;
 }
 
 .products .product-container .product:hover img {
@@ -546,9 +538,9 @@ header {
   font-size: 30px;
 }
 
-/* .products-preview .preview .fa-times:hover {
+.products-preview .preview .fa-times:hover {
   transform: rotate(90deg);
-} */
+}
 
 .products-preview .preview h3 {
   color: #444;
@@ -751,11 +743,8 @@ header {
   .about-video video {
     width: 50%;
   }
-  .card {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    margin-bottom: 10px;
+  .products .product-container {
+    grid-template-columns: 1fr;
   }
   .banner .container {
     height: 100%;

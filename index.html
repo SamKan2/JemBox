@@ -90,96 +90,98 @@
     </section>
 
     <section class="products" id="order">
-        <div class="container product-container">
-            <div class="title fade-in">
-                <h2>Order Now</h2>
-                <p>Click on one of the boxes to find out more...</p>
-            </div>
-            <div class="cards fade-in">
-                <div class="product" data-name="trial">
-                    <div class="product-content">
-                        <img src="https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="">
-                        <h3>Trial a box</h3>
-                        <p>Trial a box</p>
-                        <div class="price">
-                            <p>£20</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-name="six-month">
-                    <div class="product-content">
-                        <img src="https://images.pexels.com/photos/1329293/pexels-photo-1329293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="">
-                        <h3>Three Boxes</h3>
-                        <p>Buy 3 boxes and get £10 off!</p>
-                        <div class="price">
-                            <p>£50</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="title fade-in">
+            <h2>Order Now</h2>
+            <p>Click on one of the boxes to find out more...</p>
+        </div>
+        <div class="product-container">
 
 
-                <div class="product" data-name="one-year">
-                    <div class="product-content">
-                        <img src="https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="">
-                        <h3>Five Boxes</h3>
-                        <p>Buy 5 and get £20 off!!</p>
-                        <div class="price">
-                            <p>£80</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="products-preview">
-                <div class="preview" data-target="trial">
-                    <i class="fas fa-times"></i>
+            <div class="product fade-in" data-name="trial">
+                <div class="product-content">
                     <img src="https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="">
                     <h3>Trial a box</h3>
-
-                    <p>Clicking Buy will take you to a checkout page for payment and entering your address</p>
-                    <div class="price">£20</div>
-                    <stripe-buy-button class="button" buy-button-id="buy_btn_1N9rmWETC9SalK64O0NovujN"
-                        publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
-                    </stripe-buy-button>
+                    <p>Trial a box</p>
+                    <div class="price">
+                        <p>£20</p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="preview" data-target="six-month">
-                    <i class="fas fa-times"></i>
+            <div class="product fade-in" data-name="six-month">
+                <div class="product-content">
                     <img src="https://images.pexels.com/photos/1329293/pexels-photo-1329293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="">
-                    <h3>3 Boxes</h3>
-
-                    <p>Clicking Buy will take you to a checkout page for payment and
-                        entering your address</p>
-                    <div class="price">£50</div>
-                    <stripe-buy-button buy-button-id="buy_btn_1N9r5gETC9SalK64l9BLuzFC"
-                        publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
-                    </stripe-buy-button>
+                    <h3>Three Boxes</h3>
+                    <p>Buy 3 boxes and get £10 off!</p>
+                    <div class="price">
+                        <p>£50</p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="preview" data-target="one-year">
-                    <i class="fas fa-times"></i>
+
+            <div class="product fade-in" data-name="one-year">
+                <div class="product-content">
                     <img src="https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="">
-                    <h3>5 boxes</h3>
-
-                    <p>Clicking Buy will take you to a checkout page for payment and entering
-                        your address</p>
-                    <div class="price">£80</div>
-
-                    <stripe-buy-button buy-button-id="buy_btn_1N9sHlETC9SalK64ZSciO5mP"
-                        publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
-                    </stripe-buy-button>
+                    <h3>Five Boxes</h3>
+                    <p>Buy 5 and get £20 off!!</p>
+                    <div class="price">
+                        <p>£80</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+
+
+        <div class="products-preview">
+            <div class="preview" data-target="trial">
+                <i class="fas fa-times"></i>
+                <img src="https://images.pexels.com/photos/697224/pexels-photo-697224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <h3>Trial a box</h3>
+
+                <p>Clicking Buy will take you to a checkout page for payment and entering your address</p>
+                <div class="price">£20</div>
+                <stripe-buy-button class="button" buy-button-id="buy_btn_1N9rmWETC9SalK64O0NovujN"
+                    publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
+                </stripe-buy-button>
+            </div>
+
+            <div class="preview" data-target="six-month">
+                <i class="fas fa-times"></i>
+                <img src="https://images.pexels.com/photos/1329293/pexels-photo-1329293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <h3>3 Boxes</h3>
+
+                <p>Clicking Buy will take you to a checkout page for payment and
+                    entering your address</p>
+                <div class="price">£50</div>
+                <stripe-buy-button buy-button-id="buy_btn_1N9r5gETC9SalK64l9BLuzFC"
+                    publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
+                </stripe-buy-button>
+            </div>
+
+            <div class="preview" data-target="one-year">
+                <i class="fas fa-times"></i>
+                <img src="https://images.pexels.com/photos/269887/pexels-photo-269887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <h3>5 boxes</h3>
+
+                <p>Clicking Buy will take you to a checkout page for payment and entering
+                    your address</p>
+                <div class="price">£80</div>
+
+                <stripe-buy-button buy-button-id="buy_btn_1N9sHlETC9SalK64ZSciO5mP"
+                    publishable-key="pk_test_51N9q4DETC9SalK64xhlSgnVYQWpJlCnXPCjCNmRCVL4MwkPwS91JqWEMQlVqa5iik86n6gYijAu0FhsDXSB5Wij800aH1OyklD">
+                </stripe-buy-button>
+            </div>
+        </div>
+
     </section>
 
     <section class="contact" id="contact">
