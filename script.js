@@ -45,11 +45,8 @@ function toggler() {
         navToggler.classList.toggle('toggler-open')
         navMenu.classList.toggle('open')
     });
-
 }
 
-//Shopping Cart
-const buyButtons = document.querySelectorAll('.buttons .buy')
 const previewContainer = document.querySelector('.products-preview')
 const previewBox = previewContainer.querySelectorAll('.preview')
 
