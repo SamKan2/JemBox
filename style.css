@@ -801,6 +801,10 @@ header {
   h3 {
     font-size: 5vw;
   }
+  .container {
+    margin: 0;
+    padding: 0;
+  }
   .navbar-nav a {
     font-size: 20px;
     font-weight: 600;
@@ -856,6 +860,19 @@ header {
   }
   .form-content {
     box-shadow: none;
+  }
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+  .about-card {
+    text-align: left;
+  }
+  .about-video video {
+    max-width: 100%;
+    margin: 0;
+  }
+  .about .title {
+    margin-top: 20px;
   }
 }
 
