@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "/videos/*"
-  to = "/videos"
+  from = "/pages/videos/*"
+  to = "/pages/videos"
   status = 200
   force = true
   conditions = {Basic-Auth = ["user:password"]}
