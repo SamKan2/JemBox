@@ -868,7 +868,7 @@ header {
     text-align: left;
   }
   .about-video video {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0;
   }
   .about .title {
