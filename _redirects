@@ -1,1 +1,1 @@
-/pages/videos.html Basic-Auth: someuser:somepassword
+/pages/videos/* 200! Basic-Auth: someuser:somepassword
