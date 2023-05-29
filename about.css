@@ -22,7 +22,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: var(--syne);
 }
 
 a {
@@ -30,6 +29,9 @@ a {
 }
 
 body {
+  font-family: var(--syne);
+  padding: 0;
+  margin: 0;
   line-height: 1.4;
   background: linear-gradient(
     90deg,
@@ -75,6 +77,10 @@ p {
 .container {
   margin: 0 3vw;
   padding: 2rem;
+  text-align: center;
+}
+
+.title {
   text-align: center;
 }
 
@@ -251,10 +257,68 @@ p {
   padding: 20px;
 }
 
-@keyframes border-animation {
-  to {
-    transform: scale(1);
-  }
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav a {
+  font-size: 14px;
+  position: relative;
+  text-transform: uppercase;
+  font-family: var(--syne);
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.2rem 1.2rem;
+  letter-spacing: 3px;
+  transition: opacity 0.5s ease;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+.footer {
+  position: relative;
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon .item,
+.menu__item {
+  list-style: none;
+}
+
+.fa-brands,
+.fa {
+  font-size: 25px;
+}
+
+.social-icon .link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
 }
 
 @media screen and (max-width: 900px) {
@@ -262,9 +326,6 @@ p {
     font-size: 16px;
   }
 
-  .about-video video {
-    width: 100%;
-  }
   .container div,
   .videos.container {
     height: auto;
@@ -295,11 +356,20 @@ p {
     font-size: 20vw;
   }
   h2 {
-    font-size: 13vw;
+    font-size: 12vw;
   }
   h3 {
     font-size: 5vw;
   }
+  .about-me .title {
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  .container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
   .navbar-nav a {
     font-size: 20px;
     font-weight: 600;
@@ -309,6 +379,7 @@ p {
     width: 100%;
     box-sizing: border-box;
     z-index: 1;
+    top: 0;
   }
   .nav-toggler {
     display: block;
@@ -336,28 +407,21 @@ p {
     max-width: 80px;
   }
 
-  .banner p {
-    font-size: 22px;
+  .about-me .container {
+    flex-direction: column;
   }
-
-  header {
-    max-height: 100vh;
+  .profile-img img {
+    max-width: 70%;
+    margin: auto;
   }
-  .about-video video {
-    width: 50%;
-  }
-  .products .product-container {
+  .about-jembox .container {
     grid-template-columns: 1fr;
   }
-  .banner .container {
-    height: 100%;
+  .about-jembox img {
+    margin: auto;
   }
-  .contact .container .contact-info {
-    order: 2;
-    text-align: center;
-  }
-  .form-content {
-    box-shadow: none;
+  .about-jembox .container .about-info-img {
+    grid-area: 1/1/2/2;
   }
 }
 
